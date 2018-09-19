@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TEAMS AND LEAGUES</title>
+
+
+    <link rel="stylesheet" href="public/css/style.css">
+
+
+</head>
+
+<body>
+<center>
+    <img src="/public/images/HEAD.jpg" height="200" width="300"></img>
+    <div id="page1">
+        <br>
+        <h1>Welcome to MY FAVORITES</h1>
+        <br>
+        <h2>Please login or register if you don't have an account</h2> <br>
+        <br> <br>
+        Username:<input id="LoginUsername"/> <br>
+        Password:<input id="LoginPass"/> <br>
+        <button id="loginBtn">Login</button>
+        <button id="registerBtn">Register</button>
+    </div>
+
+    <div id="page2" style="display:none">
+        <br> <br>
+
+        <h2>My profile</h2> <br>
+
+        <button id="ST">Show/Hide Teams</button>
+        <div id="showTeams">
+            <h3>Favorite Teams:</h3>
+            <div id="Teams"></div>
+            Add/Delete new favorite team:<input id="NewTeam"/> <br>
+            <button id="addTeam">Add</button>
+            <button id="delTeam">Delete</button>
+            <br>
+            <button id="clearTeams">Clear all teams</button>
+        </div>
+
+        <br>
+
+        <button id="SL">Show/Hide Leagues</button>
+        <div id="showLeagues">
+            <h3>Favorite Leagues:</h3>
+            <div id="Leagues"></div>
+            Add/Delete new favorite league:<input id="NewLeague"/> <br>
+            <button id="addLeague">Add</button>
+            <button id="delLeague">Delete</button>
+            <br>
+            <button id="clearLeagues">Clear all leagues</button>
+            <br> <br>
+            <button id="LogoutUser">Logout</button>
+        </div>
+
+        <br>
+        Share my lists with: <input id="userShare"/>
+        <button id="shareBtn">Share!</button>
+        <br>
+        <button id="sharedBtn">Show other profile</button>
+    </div>
+
+    <div id="page4" style="display:none">
+        <br><br>
+        <div id="sharedProUser"></div>
+        <br>
+        <br> Favorite Teams: <br>
+        <div id="showTList"></div>
+        <br><br>
+        Favorite Leagues: <br>
+        <div id="showLList"></div>
+        <br><br>
+
+        <br> <br> <br>
+        <button id="goback1">Go back</button>
+    </div>
+
+    <div id="page3" style="display:none">
+        <br> <br>
+        <center>
+            <h1> Wrong password! try again! </h1>
+        </center>
+    </div>
+
+    <script src="/public/javascripts/script.js"></script>
+</center>
+</body>
+</html>
